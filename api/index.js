@@ -22,8 +22,20 @@ const project = {
     members: members,
 };
 
+const ideas = {
+    device: 'Computer',
+    problem: 'วินโดว์หาย',
+    reporter: 'สมคิด จันทร์',
+    address: 'ตึก A ห้อง 603',
+    status: 'รอซ่อม'
+};
+
 app.get('/project', (req, res) => {
     res.json(project);
+});
+
+app.get('/ideas', (req, res) => {
+    res.json(ideas);
 });
 
 app.get('/members/:id', (req, res) => {
